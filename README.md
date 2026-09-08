@@ -1,4 +1,4 @@
-# AI-Agents-SKILLS
+# AI Agents' SKILLS for Academic Use
 
 **Language / Idioma:** [en](README.md) · [pt](README_PT.md)
 
