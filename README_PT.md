@@ -8,7 +8,7 @@ A colecção está organizada por finalidade:
 
 - **[Learning](Learning/README_PT.md)** — explicações, modelos visuais e simulações de aprendizagem activa.
 - **[Production](Production/README_PT.md)** — backoffice, criação de conteúdos e produção automatizada de novos materiais (séries de vídeo, conteúdos de aprendizagem e afins).
-- **[Research](Research/README_PT.md)** — fluxos de trabalho reproduzíveis para investigação bibliográfica e artefactos de investigação.
+- **[Research](Research/README_PT.md)** — fluxos de trabalho reproduzíveis para revisão da literatura (bibliográfica), artefactos de investigação e levantamento do Estado da Arte.
 
 ## Skills em resumo
 
