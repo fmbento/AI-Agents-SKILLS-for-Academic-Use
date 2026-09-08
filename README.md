@@ -8,7 +8,7 @@ The collection is organised by purpose:
 
 - **[Learning](Learning/README.md)** — explanations, visual models and active-learning simulations.
 - **[Production](Production/README.md)** — backoffice, content creation and automated production of new materials (video series, learning content and alike).
-- **[Research](Research/README.md)** — reproducible literature-research workflows and research artefacts.
+- **[Research](Research/README.md)** — reproducible literature-review workflows and research artefacts.
 
 ## Skills at a glance
 
