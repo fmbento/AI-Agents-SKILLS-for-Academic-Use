@@ -14,7 +14,7 @@ The collection is organised by purpose:
 
 | Area | Skill | Purpose |
 | --- | --- | --- |
-| Learning | [arquiteto-mermaid](Learning/arquiteto-mermaid/SKILL.md) | Turns structured text, processes and relationships into clear Mermaid diagrams. |
+| Learning | [arquiteto-mermaid](Learning/arquiteto-mermaid/SKILL.md) | Turns structured text, processes and relationships into clear Mermaid diagrams (mindmaps, etc.). |
 | Learning | [eli14](Learning/eli14/SKILL.md) | Explains complex subjects to a curious teenager and produces a complete standalone HTML visual. |
 | Learning | [simulador-pbl](Learning/simulador-pbl/SKILL.md) | Creates interactive Problem-Based Learning challenges with progressive data and optional hints. |
 | Learning | [tradutor-feynman](Learning/tradutor-feynman/SKILL.md) | Translates technical or abstract concepts into clear explanations while preserving precision. |
