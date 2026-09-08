@@ -1,0 +1,5 @@
+( "artificial intelligence" OR "machine learning" OR "deep learning" OR "robotics" OR "assistive technology" OR "smart home" ) AND ( "elderly" OR "older adults" OR "senior*" OR "geriatric*" OR "aged population" ) AND ( "eldercare" OR "assisted living" OR "healthcare" OR "independent living" OR "caregiving" )
+
+-- Executed in Scopus advanced search on 2026-09-08
+-- Result set: 138,573 documents (top 2,000 exported, newest-first in this run)
+-- Sort for future runs: Relevance (per skill Step 2)
