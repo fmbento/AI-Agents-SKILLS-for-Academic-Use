@@ -1,4 +1,4 @@
-# AI-Agents-SKILLS
+# SKILLS (habilidades) para Agentes de IA, uso Académico
 
 **Language / Idioma:** [en](README.md) · [pt](README_PT.md)
 
