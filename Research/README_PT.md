@@ -2,7 +2,9 @@
 
 **Language / Idioma:** [en](README.md) · [pt](README_PT.md)
 
-A colecção `Research` contém skills para investigação académica estruturada e reproduzível. Actualmente inclui um fluxo de trabalho completo e os respectivos artefactos de exemplo.
+A colecção `Research` contém skills para investigação académica estruturada e reproduzível. Actualmente inclui um fluxo de trabalho completo no Scopus e os respectivos artefactos de exemplo.
+
+Para ajudantes de documento, escritório, figura e apresentação que possam ser anexados a entregáveis de investigação, consulte os scripts e skills partilhados em `Utils/` — nomeadamente `Utils/scripts/generate_pdf.py` para markdown-to-PDF e `Utils/skills-integration.md` para saber onde cabe cada ajudante.
 
 ## Skills
 
@@ -67,3 +69,15 @@ Research/
 ## Quando escolher esta skill
 
 Use `scopus-research` quando a tarefa precisar de uma pesquisa Scopus documentada, uma exportação ordenada por relevância, resumos bibliométricos, análise da frequência de referências ou um subconjunto focado. Não se destina a inventar resultados bibliográficos, contornar o acesso institucional ou tratar uma fatia de 2.000 registos ordenada por relevância como se fosse todo o corpus do Scopus.
+
+### Onde fica o ranking local
+
+Para o ranking local dos principais documentos após a exportação, use `Research/scopus-research/kthorn_research-superpower_evaluating-paper-relevance/SKILL.md` em vez de criar lógica de screening própria dentro do fluxo Scopus. Essa skill é o revisor em duas fases: classificação rápida do resumo, depois análise aprofundada com extracção estruturada e procura do texto completo por PubMed Central, resolução de DOI, Unpaywall e preprint servers.
+
+Um fluxo Research prático pode, por isso, ser:
+
+1. `scopus-research` para construir a equação, executar a pesquisa, exportar o CSV e produzir a análise bibliométrica;
+2. as 20 linhas de maior relevância do CSV como primeira lista curta;
+3. `kthorn_research-superpower_evaluating-paper-relevance` para classificar e seleccionar um top-20 local (ou um conjunto de trabalho maior) com uma rubrica consistente, mantendo cada artigo revisto em `papers-reviewed.json` e o relatório em `SUMMARY.md`.
+
+Isso mantém a automação do navegador Scopus, a analítica de CSV e o ranking de relevância artigo a artigo separados.

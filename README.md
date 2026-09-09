@@ -9,6 +9,7 @@ The collection is organised by purpose:
 - **[Learning](Learning/README.md)** — explanations, visual models and active-learning simulations.
 - **[Production](Production/README.md)** — backoffice, content creation and automated production of new materials (video series, learning content and alike).
 - **[Research](Research/README.md)** — reproducible literature-review workflows and research artefacts.
+- **[Utils](Utils/skills-integration.md)** — shared scripts and support skills for document, office, figure, slide and analysis next steps.
 
 ## Skills at a glance
 
@@ -28,7 +29,7 @@ The collection is organised by purpose:
 3. Ask the agent for a task that matches the skill description. The skill's frontmatter and instructions guide activation and output.
 4. Read the individual `SKILL.md` before adapting a skill to a new agent harness.
 
-The skills are intentionally complementary: use `tradutor-feynman` or `eli14` to explain, `arquiteto-mermaid` to visualise, `simulador-pbl` to practise, `scopus-research` to investigate academic literature, and `webinar-to-video` to turn existing recordings into published learning material.
+The skills are intentionally complementary: use `tradutor-feynman` or `eli14` to explain, `arquiteto-mermaid` to visualise, `simulador-pbl` to practise, `scopus-research` to investigate academic literature, and `webinar-to-video` to turn existing recordings into published learning material. The `Utils/` scripts and support skills are not standalone replacements for those workflows; they are shared helpers for common next steps such as rendering a markdown deliverable to PDF, producing an editable document or spreadsheet, or adding figures and slides. See `Utils/skills-integration.md` for where each one fits.
 
 ## Repository structure
 
@@ -57,6 +58,25 @@ AI-Agents-SKILLS/
 │       ├── SKILL.md
 │       ├── README.md
 │       └── examples/
+├── Utils/
+│   ├── README.md
+│   ├── skills-integration.md
+│   ├── scripts/
+│   │   └── generate_pdf.py
+│   └── Skills/
+│       ├── docx/
+│       ├── xlsx/
+│       ├── pdf/
+│       ├── markdown-mermaid-writing/
+│       ├── matplotlib/
+│       ├── optimize-for-gpu/
+│       ├── pi-agent/
+│       ├── pptx-posters/
+│       ├── scientific-data-analysis/
+│       ├── scientific-schematics/
+│       ├── scientific-slides/
+│       ├── scientific-visualization/
+│       └── markitdown/
 └── README.md
 ```
 

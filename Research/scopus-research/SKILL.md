@@ -267,6 +267,12 @@ In the run directory `./pesquisas/scopus/<day-time> - <topic>/`:
 Report both CSV paths, the record counts, and the caveat about the
 2000-record ceiling vs. the full result count.
 
+## Analysis deliverables as markdown plus PDF
+
+The analysis summary for the user is written in Markdown and stored in the run directory. Whenever the final written analysis is delivered as a `.md` file — for example `analysis_full_export.md`, `analysis_subset.md` or a comparable report — also generate the matching PDF with `Utils/scripts/generate_pdf.py` and place it in the same run directory. The skill does not replace the CSV deliverables with PDF; it keeps the CSVs as data artefacts and treats the Markdown report as the document artefact that gets a PDF companion.
+
+Do not generate the PDF while the analysis is still in progress or while waiting for a substantive user decision about scope, focus terms or export size; the PDF step belongs after the written report is finalised. If `pandoc`/`xelatex` are not available, the Markdown report is still complete and the PDF is recorded as pending rather than silently skipped.
+
 ## Session-validated pitfalls
 
 - **File-tool vs shell CWD divergence:** in some agent harnesses the file

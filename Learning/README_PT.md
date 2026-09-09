@@ -76,3 +76,5 @@ Learning/
 ```
 
 Leia cada `SKILL.md` ligado acima para conhecer os critérios completos de activação, o formato de saída, as regras de segurança e a lista de verificação final.
+
+Para ajudantes partilhados de documento, escritório, figura e apresentação que possam ser anexados a entregáveis de Learning, consulte os scripts e skills em `Utils/` — nomeadamente `Utils/scripts/generate_pdf.py` quando um recurso de aprendizagem em markdown também deva ser entregue como PDF, e `Utils/skills-integration.md` para saber onde cabe cada ajudante. As skills de Learning não são substituídas por esses ajudantes; explicam apenas o que mais pode ser feito com um resultado de Learning já escrito.

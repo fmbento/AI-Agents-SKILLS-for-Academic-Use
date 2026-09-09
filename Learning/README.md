@@ -76,3 +76,5 @@ Learning/
 ```
 
 Read each linked `SKILL.md` for the complete activation criteria, output format, safety rules and verification checklist.
+
+For shared document, office, figure and slide helpers that can attach to Learning deliverables, see the `Utils/` scripts and skills — especially `Utils/scripts/generate_pdf.py` when a markdown learning resource should also be shipped as a PDF, and `Utils/skills-integration.md` for where each helper fits. The Learning skills are not replaced by those helpers; they just explain what else can be done with a Learning output once it is written.

@@ -47,6 +47,14 @@ O [INDEX.md](webinar-to-video/INDEX.md) da própria skill tem um quick-start de 
 
 Use `webinar-to-video` quando a tarefa é converter gravações existentes numa série de vídeo polida e publicada — não para gerar vídeos do zero. Para essa capacidade mais ampla (incluindo material gerado do zero), consulte o projecto subjacente [OpenMontage](https://github.com/calesthio/OpenMontage), que fornece as ferramentas de rendering que esta skill orquestra.
 
+A skill de `Production` que está a ler é a skill de séries de vídeo. Outros tipos de entrega de produção — documentos editáveis, folhas de cálculo, figuras, pósteres ou apresentações a partir do mesmo conteúdo subjacente — pertencem aos scripts e skills partilhados em `Utils/`. Quando faz sentido, os passos seguintes naturais são:
+
+- tornar qualquer acompanhamento em markdown (por exemplo `YOUTUBE_METADATA.md` ou um ficheiro de notas de produção) num PDF com `Utils/scripts/generate_pdf.py`;
+- usar `Utils/Skills/docx` ou `Utils/Skills/xlsx` quando o mesmo material também precisar de um entregável editável no escritório;
+- usar `Utils/Skills/markdown-mermaid-writing`, `Utils/Skills/scientific-visualization`, `Utils/Skills/scientific-schematics`, `Utils/Skills/scientific-slides` ou `Utils/Skills/pptx-posters` quando o resultado de produção deva incluir figuras, diagramas ou vizuais de apresentação em vez de apenas vídeo.
+
+Para saber onde cabe cada ajudante e quais são locais a uma skill, consulte `Utils/skills-integration.md`.
+
 ## Estrutura da pasta
 
 ```text

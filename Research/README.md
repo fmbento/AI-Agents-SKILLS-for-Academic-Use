@@ -2,7 +2,9 @@
 
 **Language / Idioma:** [en](README.md) · [pt](README_PT.md)
 
-The `Research` collection contains agent skills for structured, reproducible academic research. It currently includes one complete workflow and its example artefacts.
+The `Research` collection contains agent skills for structured, reproducible academic research. It currently includes one complete Scopus workflow and its example artefacts.
+
+For downstream document, office, figure and slide helpers that can attach to research deliverables, see the shared `Utils/` scripts and skills — especially `Utils/scripts/generate_pdf.py` for markdown-to-PDF and `Utils/skills-integration.md` for where each helper fits.
 
 ## Skills
 
@@ -67,3 +69,15 @@ Research/
 ## Choosing this skill
 
 Use `scopus-research` when the task needs a documented Scopus search, a relevance-sorted export, bibliometric summaries, reference-frequency analysis or a focused subset. It is not intended to fabricate literature findings, bypass institutional access, or treat a relevance slice of 2,000 records as the complete Scopus corpus.
+
+### Where ranking lives now
+
+For local relevance ranking of the best papers after export, use `Research/scopus-research/kthorn_research-superpower_evaluating-paper-relevance/SKILL.md` rather than inventing your own screening logic inside the Scopus workflow. That skill is the two-stage reviewer: quick abstract scoring, then deep dive with structured extraction and full-text chasing through PubMed Central, DOI resolution, Unpaywall, and preprints.
+
+A practical Research workflow can therefore be:
+
+1. `scopus-research` to build the equation, run the search, export the CSV, and produce the bibliometric analysis;
+2. the top 20 relevance rows from the CSV as the first shortlist;
+3. `kthorn_research-superpower_evaluating-paper-relevance` to rank and screen a local top-20 (or a larger working set) with a consistent rubric, keeping every reviewed paper in `papers-reviewed.json` and the narrative in `SUMMARY.md`.
+
+That keeps Scopus browser automation, CSV analytics, and paper-level relevance ranking in separate concerns.

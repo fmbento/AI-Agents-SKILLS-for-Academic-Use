@@ -47,6 +47,14 @@ The skill's own [INDEX.md](webinar-to-video/INDEX.md) has a 1-minute quick start
 
 Use `webinar-to-video` when the task is converting existing recordings into a polished, published video series — not for generating videos from scratch. For that broader (including from-scratch, generated-footage) capability, see the underlying [OpenMontage](https://github.com/calesthio/OpenMontage) project, which supplies the rendering tools this skill orchestrates.
 
+The `Production` skill you are reading is the video-series skill. Other kinds of production delivery — editable documents, spreadsheets, figures, posters or slide decks from the same underlying content — belong to the shared `Utils/` scripts and skills. When it applies, the natural follow-ups are:
+
+- render any markdown companion (for example `YOUTUBE_METADATA.md` or a production notes file) to PDF with `Utils/scripts/generate_pdf.py`;
+- use `Utils/Skills/docx` or `Utils/Skills/xlsx` when the same material also needs an editable office deliverable;
+- use `Utils/Skills/markdown-mermaid-writing`, `Utils/Skills/scientific-visualization`, `Utils/Skills/scientific-schematics`, `Utils/Skills/scientific-slides`, or `Utils/Skills/pptx-posters` when the production output should include figures, diagrams or presentation visuals instead of only video.
+
+For where each helper fits and which ones are skill-local, see `Utils/skills-integration.md`.
+
 ## Folder structure
 
 ```text

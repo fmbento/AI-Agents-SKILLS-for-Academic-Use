@@ -43,3 +43,16 @@ Antes de responder, confirma que:
 - não confundiste correlação com causalidade;
 - a precisão relevante foi preservada;
 - a resposta corresponde ao nível pedido e não contém afirmações médicas ou científicas excessivamente categóricas.
+
+## Entrega duplex para explicações escritas
+
+Quando a resposta final for um texto explicativo completo — e não um diálogo interactivo em que o agente fica à espera do utilizador — entrega sempre o resultado em dois formatos ligados:
+
+1. o texto principal em Markdown;
+2. um PDF do mesmo conteúdo, gerado com `Utils/scripts/generate_pdf.py`.
+
+O PDF não é opcional sempre que o output final for um ficheiro `.md` destinado a leitura, partilha ou archive; é a mesma entrega, num formato mais adequado a impressão e a leitura fora do editor. Usa os mesmos caminhos e convenções que os restantes skills desta coleção: o Markdown é a origem, o PDF é o acompanhamento.
+
+Executa o PDF após terminar o texto, na mesma pasta de entrega, e trata a falha de geração como um aviso técnico — não como se o conteúdo tivesse falhado. Se o `pandoc`/`xelatex` necessário não estiver disponível, o Markdown continua completo; o PDF fica pendente e o agente não declara a tarefa como concluída com o mesmo nível de entrega.
+
+Não use esta regra em sessões interactivas em que o produto seja o diálogo e o agente fique à espera de uma resposta — por exemplo, enquanto apresenta o caso e espera pela resposta do aluno no simulador PBL. A regra aplica-se ao output final, não ao ritmo da conversa.

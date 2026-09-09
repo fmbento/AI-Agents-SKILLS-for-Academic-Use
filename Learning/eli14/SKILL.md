@@ -34,6 +34,12 @@ Inclui no final um bloco de código Markdown com um ficheiro HTML completo e aut
 
 O código deve ser específico para o tema pedido, não um template vazio. Se o utilizador fornecer dados privados, não os repitas desnecessariamente no artefacto. Depois do bloco, não acrescentes instruções longas; uma frase curta sobre como guardar como `.html` é suficiente quando útil.
 
+## Entrega do texto explicativo
+
+A explicação em si também é um output final. Quando o agente terminar a explicação e não estiver num momento interactivo de espera por resposta do aluno, entrega o texto em Markdown e gera também o PDF correspondente com `Utils/scripts/generate_pdf.py`, na mesma pasta de entrega. O padrão é o mesmo que nos restantes skills desta coleção: o Markdown é a origem, o PDF é o acompanhamento para leitura, impressão ou partilha.
+
+Não apliques esta regra enquanto estás a interagir com o aluno e o ritmo depender da resposta dele — por exemplo, durante o gancho e a explicação passo a passo, antes do produto final estar definido. A regra aplica-se ao output final concluído.
+
 ## Verificação final
 
 Confirma que a explicação responde ao “como” e ao “porquê”, que os exemplos são adequados à idade, que o HTML é completo e que o visual continua compreensível sem interação ou cores específicas.

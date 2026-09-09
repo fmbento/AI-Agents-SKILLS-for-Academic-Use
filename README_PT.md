@@ -9,6 +9,7 @@ A colecção está organizada por finalidade:
 - **[Learning](Learning/README_PT.md)** — explicações, modelos visuais e simulações de aprendizagem activa.
 - **[Production](Production/README_PT.md)** — backoffice, criação de conteúdos e produção automatizada de novos materiais (séries de vídeo, conteúdos de aprendizagem e afins).
 - **[Research](Research/README_PT.md)** — fluxos de trabalho reproduzíveis para revisão da literatura (bibliográfica), artefactos de investigação e levantamento do Estado da Arte.
+- **[Utils](Utils/skills-integration.md)** — scripts partilhados e skills de apoio para passos seguintes de documento, escritório, figura, apresentação e análise.
 
 ## Skills em resumo
 
@@ -28,7 +29,7 @@ A colecção está organizada por finalidade:
 3. Peça ao agente uma tarefa correspondente à descrição da skill. O frontmatter e as instruções da skill orientam a activação e o resultado.
 4. Leia o `SKILL.md` individual antes de adaptar uma skill a outro sistema de agentes.
 
-As skills são complementares: use `tradutor-feynman` ou `eli14` para explicar, `arquiteto-mermaid` para visualizar, `simulador-pbl` para praticar, `scopus-research` para investigar literatura académica e `webinar-to-video` para transformar gravações existentes em materiais de aprendizagem publicados.
+As skills são complementares: use `tradutor-feynman` ou `eli14` para explicar, `arquiteto-mermaid` para visualizar, `simulador-pbl` para praticar, `scopus-research` para investigar literatura académica e `webinar-to-video` para transformar gravações existentes em materiais de aprendizagem publicados. Os ficheiros e skills de apoio em `Utils/` não são substitutos autónomos desses fluxos; são ajudantes partilhados para passos seguintes comuns como tornar um entregável em markdown num PDF, produzir um documento ou folha de cálculo editável, ou adicionar figuras e apresentações. Consulte `Utils/skills-integration.md` para saber onde cabe cada um.
 
 ## Estrutura do repositório
 
@@ -57,6 +58,25 @@ AI-Agents-SKILLS/
 │       ├── SKILL.md
 │       ├── README.md
 │       └── examples/
+├── Utils/
+│   ├── README.md
+│   ├── skills-integration.md
+│   ├── scripts/
+│   │   └── generate_pdf.py
+│   └── Skills/
+│       ├── docx/
+│       ├── xlsx/
+│       ├── pdf/
+│       ├── markdown-mermaid-writing/
+│       ├── matplotlib/
+│       ├── optimize-for-gpu/
+│       ├── pi-agent/
+│       ├── pptx-posters/
+│       ├── scientific-data-analysis/
+│       ├── scientific-schematics/
+│       ├── scientific-slides/
+│       ├── scientific-visualization/
+│       └── markitdown/
 └── README.md
 ```
 
